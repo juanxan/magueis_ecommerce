@@ -1,0 +1,41 @@
+.container-section-search{
+    height: 250px;
+    background-color: #94c120;
+    padding: 21px 0;
+}
+.search{
+    width: 1062px;
+    height: 209px;
+    background-color: white;
+    border-radius: 1rem;
+    margin: auto;
+}
+.benefits{
+    padding: 4rem;
+    background-color: rgba(0,0,0, 0.1);
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+    }
+    &__card{
+        border: 1px solid #cccccc;
+        padding: 2rem;
+        background-color: white;
+        border-radius: 14px;
+        &--title{
+            
+        }
+        &--content{
+            line-height: 1.43;
+            letter-spacing: -0.1px;
+            color: #888;
+            font-size: 14px;
+        }
+    }
+    &__card:hover{
+        box-shadow: 0 12px 20px rgb(68 68 68 / 20%);
+
+    }
+}

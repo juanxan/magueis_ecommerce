@@ -1,0 +1,51 @@
+<section>
+    <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" (slide)="onSlide($event)">
+        <ng-template ngbSlide *ngFor="let img of images; index as i">
+          <div class="carousel-caption">
+            <h3>My slide {{i + 1}} title</h3>
+          </div>
+          <a href="https://www.google.fr/?q=Number+{{i+1}}" target="_blank" rel="nofollow noopener noreferrer">
+            <div class="picsum-img-wrapper">
+              <img [src]="img" alt="My image {{i + 1}} description" width="1522" height="509">
+            </div>
+          </a>
+        </ng-template>
+      </ngb-carousel>
+</section>
+<section class="benefits">
+    <h2>Alquila un carro y recorre mucho más en tu viaje</h2>
+    <div class="benefits__container">
+        <div class="benefits__card">
+            <div class="benefits__card--title">
+                <h2>Beneficios de alquilar un carro</h2>
+            </div>
+            <div class="benefits__card--content">
+                <p>Siente la libertad que te da conocer una ciudad al estar detrás del volante. Con tu rent a car puedes tomar las riendas de tu tiempo y armar tu propio itinerario para recorrer y conocer todo lo que quieras. Puedes elegir alquiler de carros pequeños, para pocas personas, o grandes, si vas con amigos o con tu familia. ¡Disfruta tu destino a tu ritmo y aprovecha para conocer mucho más en tu viaje! No te arrepentirás de alquilar un carro.</p>
+            </div>
+        </div>
+        <div class="benefits__card">
+            <div class="benefits__card--title">
+                <h2>¿Qué tener en cuenta para alquilar un carro?</h2>
+            </div>
+            <div class="benefits__card--content">
+                <p>Antes de alquilar un carro, ten en cuenta el número de pasajeros que serán en el viaje. Esto te ayudará a decidir el tamaño del carro. Además, presta atención a los seguros que están incluidos en el contrato de alquiler, así como los beneficios de kilometraje ilimitado, tipo de caja y modalidad de entrega del vehículo. También te servirá mirar la puntuación de la compañía de rent a car.</p>
+            </div>
+        </div>
+        <div class="benefits__card">
+            <div class="benefits__card--title">
+                <h2>¿Qué necesitas para retirar tu carro?</h2>
+            </div>
+            <div class="benefits__card--content">
+                <p>Para retirar tu carro necesitarás contar con una licencia de conducir en buen estado y vigente, y presentar tu documento/Pasaporte. Ten en cuenta que el nombre de la persona debe ser el mismo tanto en la licencia de conducir como en el documento/Pasaporte. Además, necesitarás tener una tarjeta de crédito a nombre del conductor principal o adicional con saldo suficiente para el bloqueo de seguridad que realiza la agencia de alquiler de carros.</p>
+            </div>
+        </div>
+        <div class="benefits__card">
+            <div class="benefits__card--title">
+                <h2>¿Cuáles son las formas de entrega del carro?</h2>
+            </div>
+            <div class="benefits__card--content">
+                <p>Hay 4 modalidades para la entrega de tu carro: 1) la compañía de alquiler de carros hace la entrega del vehículo en el aeropuerto; 2) meet & greet: personal de la agencia de rent a car te espera en el aeropuerto para entregarte el carro; 3) servicio de shuttle: la empresa te ofrece un traslado hasta el local para retirar el vehículo; y 4) confirmación telefónica: al llegar al aeropuerto tienes que comunicarte por teléfono con la agencia para coordinar la entrega del carro.</p>
+            </div>
+        </div>
+    </div>
+</section>

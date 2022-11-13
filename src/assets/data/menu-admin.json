@@ -1,0 +1,28 @@
+[
+    {
+      "icon": "fa-solid fa-car",
+      "name": "Carros",
+      "redirectTo": "cars"
+    },
+    {
+      "icon": "fa-solid fa-tag",
+      "name": "Categoria",
+      "redirectTo": "category"
+    },
+    {
+      "icon": "fa-solid fa-image",
+      "name": "Carusel",
+      "redirectTo": "carusel"
+    },
+    {
+      "icon": "fa-solid fa-car",
+      "name": "Botones y router",
+      "redirectTo": "botones"
+    },
+    {
+      "icon": "fa-solid fa-car",
+      "name": "Botones y router",
+      "redirectTo": "botones"
+    }
+  ]
+  

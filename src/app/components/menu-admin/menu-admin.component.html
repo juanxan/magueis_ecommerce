@@ -1,0 +1,26 @@
+<section class="menu">
+        <div class="menu-option">
+            <div class="menu-option__content" >
+                <div>
+                    <a type="button" class="btn legui-btn btn-floating mx-1 mb-4 mt-4 car-add"> 
+                        <span><i class="fas fa-plus-circle"></i></span>
+                        <p>Registrar Carro</p>
+                    </a>
+                </div>
+                <div *ngFor="let item of componentes | async">
+                    <a type="button" routerLink="{{item.redirectTo}}" routerLinkActive="active-link" class="btn legui-btn btn-floating mx-1">
+                        <span><i class="{{item.icon}}"></i></span>
+                        <p>{{item.name}}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="menu-option__footer mb-4">
+                <div class="menu-option__content">
+                    <a type="button" routerLink="settings" routerLinkActive="active-link" class="btn legui-btn btn-floating mx-1">
+                        <span><i class="fas fa-cog"></i></span>
+                        <p>Settings</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+</section>

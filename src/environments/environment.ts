@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  name:'(DEV)',
+  version:'Version: 1.0.2 [Beta]',
+  url: 'https://ecotreesoft-ecommerce.herokuapp.com/'
 };
 
 /*

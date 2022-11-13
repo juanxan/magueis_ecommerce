@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+  }
+.cars-container{
+  overflow-y: scroll;
+  height: 570px;
+  max-width: 100%;
+}
+.mat-row .mat-cell {
+  cursor: pointer;
+}
+
+.mat-row:hover .mat-cell {
+  background-color: #EEEEEE;
+  font-weight: bold;
+}
