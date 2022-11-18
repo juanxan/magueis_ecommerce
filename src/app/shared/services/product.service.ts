@@ -7,7 +7,7 @@ import { ProductsI } from '../interfaces/product.interface';
 @Injectable({
   providedIn: 'root'
 })
-export class CarService {
+export class ProductService {
   
   public titanId = Number(localStorage.getItem('id'));
   private urlGtBack = environment.url;
@@ -15,7 +15,7 @@ export class CarService {
   constructor(private readonly http: HttpClient) { }
 
   getProducts(): Observable<ProductsI[]> {
-    const url = this.urlGtBack + `/product`;
+    const url = this.urlGtBack + `/users/products_consult`;
     return this.http.get<ProductsI[]>(url);
   }
 }

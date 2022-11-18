@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import  { HttpClient } from '@angular/common/http';
-import { Componente } from '../../interfaces/menu-admin.interfaces';
+import { Componente } from '../interfaces/menu-admin.interfaces';
 
 import { Observable } from 'rxjs';
 

@@ -1,0 +1,106 @@
+@import "../../../../styles.scss"; 
+body{
+    background-color: #eee;
+}
+figure{
+    margin: 0;
+    padding: 0;
+}
+.products{
+    background-color: #eee;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4,1fr);
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    &__card{
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        border-radius: 14px;
+        text-align: center;
+        &-content{
+            padding: 1rem;
+        }
+        &-header{
+            width: 346px;
+            height: 518px;
+        }
+        &--img{
+            width: 346px;
+            height: 500px;
+            overflow: hidden;
+            border-radius: 14px;
+        }
+        &--mat-icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            bottom: 2rem;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            border: 1px solid #000;
+            border-radius: 50%;            
+        }
+        &--mat-icon:hover{
+            border: 1px solid #e325ab;
+            background-color: #e325ab;
+            color: white;
+        }
+        // &--img::after {
+        //     content: '';
+        //     position: absolute;
+        //     left: 0;
+        //     top: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     background: #e5e5e5;
+        //     opacity: 0;
+        //     transition: .5s ease all;
+        // }
+        &--title span{
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.33;
+            color: #313131;
+            white-space: nowrap;
+        }
+        &--description{
+            
+        }
+        &--price{
+            font-weight: 500;
+            color: #000;
+            line-height: 26px;
+        }
+        &--btn{
+            // visibility: hidden;
+            .legui-btn{
+                width: 100%;
+                height: 100%;
+                color: #000;
+                border: 1px solid #000;
+            }
+            .legui-btn:hover{
+                border: 1px solid #e325ab;
+                @include legui-btn-primary
+            }
+        }
+        &:hover &--btn{
+            // visibility: visible;
+        }
+        &:hover &--img img{
+            transform: scale(1.1);
+        }
+    }
+    &__card:hover{
+        box-shadow: 0px 0px 10px 0px rgba(225,38,171, 0.1);
+    }
+}

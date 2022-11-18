@@ -14,13 +14,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthInterceptorService } from './shared/services/auth-interceptor.service';
+import { ShopCartComponent } from './components/shop-cart/shop-cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    ShopCartComponent
   ],
   imports: [
     BrowserModule,
