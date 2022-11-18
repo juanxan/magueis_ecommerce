@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { MenuService } from 'src/app/shared/services/menu.service';
 
-import { Componente } from '../../interfaces/menu-admin.interfaces';
+import { Componente } from '../../shared/interfaces/menu-admin.interfaces';
 @Component({
   selector: 'app-menu-admin',
   templateUrl: './menu-admin.component.html',

@@ -7,17 +7,21 @@ import { CategoryComponent } from './category/category.component';
 import { IndexComponent } from './index/index.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {MatIconModule} from '@angular/material/icon'
+import { ProductsDetComponent } from './products-det/products-det.component';
 
 @NgModule({
   declarations: [
     ProductsComponent,
     CategoryComponent,
-    IndexComponent
+    IndexComponent,
+    ProductsDetComponent
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
-    NgbModule
+    NgbModule,
+    MatIconModule
   ]
 })
 export class HomeModule { }

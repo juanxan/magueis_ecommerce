@@ -1,1 +1,27 @@
-<p>products works!</p>
+<section class="products" >
+    <article class="products__card" *ngFor="let product of products">
+        <div class="products__card-header">
+            <!-- {{product.image}} -->
+            <figure class="products__card--img">
+                <img src="../../../../assets/img/jean.jpg" alt="" width="346" height="500">
+            </figure>
+            <div class="products__card--mat-icon">
+                <mat-icon>shopping_cart</mat-icon>
+            </div>
+        </div>
+        <div class="products__card-content">
+            <div class="products__card--title">
+                <span>{{product.name}}</span>
+            </div>
+            <div class="products__card--description">
+                {{product.description}}
+            </div>
+            <div class="products__card--price">
+                {{product.price | currency:'COP':'$':'1.0'}}
+            </div>
+            <div class="products__card--btn">
+                <button class="btn legui-btn">Ver Producto</button>
+            </div>
+        </div>
+    </article>
+</section>

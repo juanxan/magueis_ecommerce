@@ -10,7 +10,6 @@ import { MatInputModule } from '@angular/material/input';
 import {MatPaginatorModule} from '@angular/material/paginator';
 
 import { CarAdminComponent } from './car-admin/car-admin.component';
-import { CarDetAdminComponent } from './car-det-admin/car-det-admin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MenuAdminComponent } from '../../components/menu-admin/menu-admin.component';
 import { ProfileComponent } from 'src/app/components/profile/profile.component';
@@ -22,7 +21,7 @@ import { CarouselAdminComponent } from './carousel-admin/carousel-admin.componen
 
 @NgModule({
   declarations: [
-    CarDetAdminComponent,
+    AdminComponent,
     CarAdminComponent,
     DashboardComponent,
     MenuAdminComponent,
